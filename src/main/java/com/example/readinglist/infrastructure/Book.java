@@ -1,4 +1,4 @@
-package com.example.readinglist.domain;
+package com.example.readinglist.infrastructure;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
