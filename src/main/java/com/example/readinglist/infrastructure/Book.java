@@ -16,6 +16,8 @@ public class Book {
 
     private String isbn;
 
+    private String title;
+
     private String author;
 
     private String description;
@@ -58,5 +60,13 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
