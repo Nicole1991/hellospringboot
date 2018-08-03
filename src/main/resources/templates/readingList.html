@@ -1,7 +1,7 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Reading List</title>
-    <link rel="stylesheet" th:href="@{../style.css}">
+    <link rel="stylesheet" th:href="@{/style.css}" />
 </head>
 <body>
 <h2>Your Reading List</h2>
@@ -29,7 +29,7 @@
     <label for="author"}>Author:<input type="text" name="author" size="50"><br/></label>
     <label for="isbn"}>ISBN:<input type="text" name="isbn" size="15"><br/></label>
     <label for="description"}>Title:<textarea name="description" cols="80"></textarea><br/></label>
-    <input type="submit">
+    <input type="submit" value="确认添加">
 </form>
 </body>
 </html>
