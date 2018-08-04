@@ -5,11 +5,8 @@ spring:
     show-banner: false
   thymeleaf:
     cache: false  #禁用模版缓存、便于开发调试用，如果为true的话，模版的变更只能在重启应用程序时生效
-  datasource:
-    url: jdbc:mysql://localhost/readinglist
-    username: dbuser
-    password: dbpass
-logging:
-  level:
-  root: warn
-  org.springFramework.security: DEBUG
+#  datasource:
+#    url: jdbc:mysql://localhost/readinglist
+#    username: dbuser
+#    password: dbpass
+#    driver-class-name: com.mysql.jdbc.Driver
