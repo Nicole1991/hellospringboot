@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ReadingListRepository extends JpaRepository<Book, Long>{
 
-    List<Book> findAllByReader(String reader);
+    List<Book> findAllByReader(Reader reader);
 }
