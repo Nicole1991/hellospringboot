@@ -1,4 +1,4 @@
-package com.example.readinglist.config;
+package com.example.readinglist;
 
 import com.example.readinglist.infrastructure.ReaderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +20,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/").access(
-            "hasRole('READER')"
-        ).antMatchers("/**").permitAll()
+        http.authorizeRequests()
+            .antMatchers("/").access("hasRole('READER')")
+            .antMatchers("/**").permitAll()
             .and()
             .formLogin()
             .loginPage("/login")
