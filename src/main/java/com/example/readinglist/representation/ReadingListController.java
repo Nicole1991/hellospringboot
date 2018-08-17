@@ -29,6 +29,11 @@ public class ReadingListController {
         this.associateId = associateId;
     }
 
+    @GetMapping(value = "/login")
+    public String loginPage() {
+        return "login";
+    }
+
     @GetMapping
     public String readersBooks(Reader reader, Model model) {
         List<Book> readingList = readingListRepository.findAllByReader(reader);
